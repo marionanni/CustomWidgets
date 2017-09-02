@@ -4,7 +4,25 @@
               android:layout_height="match_parent"
               android:orientation="vertical" >
 
-    <com.example.customwidgets.BullsEyeView
+
+    <com.example.customwidgets.Busola
+        android:id="@+id/northDirection"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="@dimen/valueSelector_height"
+        android:layout_marginLeft="@dimen/valueSelector_hMargin"
+        android:layout_marginRight="@dimen/valueSelector_hMargin"/>
+
+    <EditText
+        android:id="@+id/rotateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="90"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/rotateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotate"/>
 </LinearLayout>
